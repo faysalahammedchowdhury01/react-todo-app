@@ -20,7 +20,7 @@ class Todos extends Component {
       {
         id: 1,
         title: 'হাতের লিখা',
-        description: 'ঈদ এর হাতের লিখা।',
+        description: 'ঈদের বন্ধের হাতের লিখা শেষ করা।',
         isComplete: false,
         time: new Date().toLocaleString(),
       },
