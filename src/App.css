@@ -15,11 +15,18 @@ tr {
 button,
 a {
   box-shadow: none !important;
-  width: 100px;
   margin-top: 10px;
 }
 
 input[type='radio'],
 label {
   cursor: pointer;
+}
+
+.todo {
+  padding: 0 20px !important;
+}
+
+.todo p {
+  width: 350px !important;
 }

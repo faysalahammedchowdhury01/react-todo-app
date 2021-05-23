@@ -7,7 +7,7 @@ function ListView({ todos, toggleComplete, deleteTodoItem, editTodoItem }) {
         {todos.map((todo) => (
           <div
             key={todo.id}
-            className="item d-flex flex-wrap justify-content-between align-items-center bg-light shadow p-4 my-4"
+            className="item d-flex flex-wrap justify-content-between align-items-center bg-white shadow p-4 my-5"
           >
             <div className="left me-4">
               <h4>{todo.title}</h4>

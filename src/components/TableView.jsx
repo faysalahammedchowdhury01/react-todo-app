@@ -2,12 +2,14 @@ import React from 'react';
 
 function TableView({ todos, toggleComplete, deleteTodoItem, editTodoItem }) {
   return (
-    <div className="container">
+    <div className="container table-responsive">
       <table className="table">
         <thead>
           <tr>
             <th scope="col">Time</th>
-            <th scope="col">Todo</th>
+            <th className="todo" scope="col">
+              Todo
+            </th>
             <th scope="col">Edit</th>
             <th scope="col">Action</th>
             <th scope="col">Delete</th>
@@ -17,7 +19,7 @@ function TableView({ todos, toggleComplete, deleteTodoItem, editTodoItem }) {
           {todos.map((todo, index) => (
             <tr key={todo.id}>
               <td>{todo.time}</td>
-              <td>
+              <td className="todo">
                 <h4 className="mb-0">{todo.title}</h4>
                 <p className="description mb-0 mt-1 card-text">
                   {todo.description}
