@@ -15,6 +15,7 @@ tr {
 button,
 a {
   box-shadow: none !important;
+  width: 100px;
   margin-top: 10px;
 }
 
