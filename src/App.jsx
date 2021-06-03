@@ -4,11 +4,15 @@ import Todos from './components/Todos';
 import TodoContext from './contexts/TodoContext';
 
 function App() {
-    const [todos, setTodos] = useState([
-        { id: 1, title: 'Demo 1', isComplete: false },
-        { id: 2, title: 'Demo 2', isComplete: false },
-        { id: 3, title: 'Demo 3', isComplete: false },
-    ]);
+    const [todos, setTodos] = useState(
+        JSON.parse(localStorage.getItem('todos')) || [
+            { id: 1, title: 'Demo 1', isComplete: false },
+            { id: 2, title: 'Demo 2', isComplete: false },
+            { id: 3, title: 'Demo 3', isComplete: false },
+        ]
+    );
+
+    localStorage.setItem('todos', JSON.stringify(todos));
 
     return (
         <div
